@@ -1,0 +1,89 @@
+\doxysection{Solar\+\_\+\+System/main.cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{Solar\_System/main.cpp@{Solar\_System/main.cpp}}
+
+
+A file that demonstrates a simple solar system simulation using SDL2.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$SDL.\+h$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$array$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_planet}{Planet}}
+\begin{DoxyCompactList}\small\item\em Represents a planet in the solar system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Main function for the solar system simulation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+constexpr int \mbox{\hyperlink{main_8cpp_a99b684b1821066f3a8b1e5477cc5eb34}{SCREEN\+\_\+\+WIDTH}} = 1920
+\begin{DoxyCompactList}\small\item\em The width of the window. \end{DoxyCompactList}\item 
+constexpr int \mbox{\hyperlink{main_8cpp_a4ae60e21767f04fbdb318afcdfae058d}{SCREEN\+\_\+\+HEIGHT}} = 1080
+\begin{DoxyCompactList}\small\item\em The height of the window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A file that demonstrates a simple solar system simulation using SDL2. 
+
+This file creates a graphical representation of a solar system with planets orbiting the sun. The solar system is rendered using SDL2 and textures are loaded from BMP files. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97} 
+int main (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{argv}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Main function for the solar system simulation. 
+
+Initializes SDL, loads textures, and enters the main loop where the solar system is rendered and updated. The loop continues until the user closes the window or presses the escape key. \begin{DoxyReturn}{Returns}
+Exit status. 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Set rendering scale quality to linear for better texture quality.
+
+\texorpdfstring{$<$}{<} The rectangle defining the position and size of the sun.
+
+\texorpdfstring{$<$}{<} The rectangle defining the background.
+
+\texorpdfstring{$<$}{<} The x-\/coordinate of the sun\textquotesingle{}s center calcualted outside of the loop.
+
+\texorpdfstring{$<$}{<} The y-\/coordinate of the sun\textquotesingle{}s center calcualted outside of the loop.
+
+\texorpdfstring{$<$}{<} Set the draw color to black.
+
+\texorpdfstring{$<$}{<} Delay to achieve a frame rate of approximately 60 FPS.
+
+\texorpdfstring{$<$}{<} Clean up resources and close the window.
+
+\texorpdfstring{$<$}{<} Quit SDL.
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{main_8cpp_a4ae60e21767f04fbdb318afcdfae058d}\index{main.cpp@{main.cpp}!SCREEN\_HEIGHT@{SCREEN\_HEIGHT}}
+\index{SCREEN\_HEIGHT@{SCREEN\_HEIGHT}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{SCREEN\_HEIGHT}{SCREEN\_HEIGHT}}
+{\footnotesize\ttfamily \label{main_8cpp_a4ae60e21767f04fbdb318afcdfae058d} 
+int SCREEN\+\_\+\+HEIGHT = 1080\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+The height of the window. 
+
+\Hypertarget{main_8cpp_a99b684b1821066f3a8b1e5477cc5eb34}\index{main.cpp@{main.cpp}!SCREEN\_WIDTH@{SCREEN\_WIDTH}}
+\index{SCREEN\_WIDTH@{SCREEN\_WIDTH}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{SCREEN\_WIDTH}{SCREEN\_WIDTH}}
+{\footnotesize\ttfamily \label{main_8cpp_a99b684b1821066f3a8b1e5477cc5eb34} 
+int SCREEN\+\_\+\+WIDTH = 1920\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+The width of the window. 
+

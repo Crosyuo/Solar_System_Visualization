@@ -1,0 +1,174 @@
+\doxysection{Planet Struct Reference}
+\hypertarget{struct_planet}{}\label{struct_planet}\index{Planet@{Planet}}
+
+
+Represents a planet in the solar system.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_planet_af9fbf9c91a05bf25b9d7d9bf59b41bba}{Planet}} (int w, int h, double \mbox{\hyperlink{struct_planet_a4dc99393b834f579756958aa4c7d50bb}{orbit\+Radius}}, double \mbox{\hyperlink{struct_planet_a4fe0a8d2ada3b8e00dfb801cb2fb1bc1}{orbit\+Speed}}, double \mbox{\hyperlink{struct_planet_a925d18bb135ca16312c0e4ed506ad95c}{angle}}, std\+::shared\+\_\+ptr$<$ SDL\+\_\+\+Texture $>$ \mbox{\hyperlink{struct_planet_ad6c657bbbbc3c7a2e5fec49579d1ee5d}{texture}})
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{struct_planet}{Planet} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_planet_a7bf594b581e6888ab12e16328c140906}{update\+Position}} (int sunX, int sunY)
+\begin{DoxyCompactList}\small\item\em Updates the position of the planet based on its orbit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_planet_a6e84208da4645ab4744fcdca52bc0e23}{render}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer)
+\begin{DoxyCompactList}\small\item\em Renders the planet to the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{struct_planet_abb1b9092445b238f3fd54298a05ad27c}{rect}}
+\begin{DoxyCompactList}\small\item\em The rectangle defining the position and size of the planet. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{struct_planet_a4dc99393b834f579756958aa4c7d50bb}{orbit\+Radius}}
+\begin{DoxyCompactList}\small\item\em The radius of the planet\textquotesingle{}s orbit around the sun. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{struct_planet_a4fe0a8d2ada3b8e00dfb801cb2fb1bc1}{orbit\+Speed}}
+\begin{DoxyCompactList}\small\item\em The speed at which the planet orbits the sun. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{struct_planet_a925d18bb135ca16312c0e4ed506ad95c}{angle}}
+\begin{DoxyCompactList}\small\item\em The current angle of the planet in its orbit. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ SDL\+\_\+\+Texture $>$ \mbox{\hyperlink{struct_planet_ad6c657bbbbc3c7a2e5fec49579d1ee5d}{texture}}
+\begin{DoxyCompactList}\small\item\em The texture representing the planet. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_planet_a2aaa99260e0ae40ff4d320e9e0da7f31}{halfW}}
+\begin{DoxyCompactList}\small\item\em Half of the planet\textquotesingle{}s width, used for positioning. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_planet_a736d5d2681ed387ac14cf220f632d2af}{halfH}}
+\begin{DoxyCompactList}\small\item\em Half of the planet\textquotesingle{}s height, used for positioning. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a planet in the solar system. 
+
+The \doxylink{struct_planet}{Planet} struct holds information about a planet\textquotesingle{}s position, orbit, and texture. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_planet_af9fbf9c91a05bf25b9d7d9bf59b41bba}\index{Planet@{Planet}!Planet@{Planet}}
+\index{Planet@{Planet}!Planet@{Planet}}
+\doxysubsubsection{\texorpdfstring{Planet()}{Planet()}}
+{\footnotesize\ttfamily \label{struct_planet_af9fbf9c91a05bf25b9d7d9bf59b41bba} 
+Planet\+::\+Planet (\begin{DoxyParamCaption}\item[{int}]{w}{, }\item[{int}]{h}{, }\item[{double}]{orbit\+Radius}{, }\item[{double}]{orbit\+Speed}{, }\item[{double}]{angle}{, }\item[{std\+::shared\+\_\+ptr$<$ SDL\+\_\+\+Texture $>$}]{texture}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a \doxylink{struct_planet}{Planet} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & Width of the planet\textquotesingle{}s texture. \\
+\hline
+{\em h} & Height of the planet\textquotesingle{}s texture. \\
+\hline
+{\em orbit\+Radius} & The radius of the planet\textquotesingle{}s orbit. \\
+\hline
+{\em orbit\+Speed} & The speed of the planet\textquotesingle{}s orbit. \\
+\hline
+{\em angle} & The initial angle of the planet. \\
+\hline
+{\em texture} & The texture of the planet. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_planet_a6e84208da4645ab4744fcdca52bc0e23}\index{Planet@{Planet}!render@{render}}
+\index{render@{render}!Planet@{Planet}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{struct_planet_a6e84208da4645ab4744fcdca52bc0e23} 
+void Planet\+::render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Renders the planet to the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The SDL\+\_\+\+Renderer used for rendering. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_planet_a7bf594b581e6888ab12e16328c140906}\index{Planet@{Planet}!updatePosition@{updatePosition}}
+\index{updatePosition@{updatePosition}!Planet@{Planet}}
+\doxysubsubsection{\texorpdfstring{updatePosition()}{updatePosition()}}
+{\footnotesize\ttfamily \label{struct_planet_a7bf594b581e6888ab12e16328c140906} 
+void Planet\+::update\+Position (\begin{DoxyParamCaption}\item[{int}]{sunX}{, }\item[{int}]{sunY}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Updates the position of the planet based on its orbit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sunX} & The x-\/coordinate of the sun\textquotesingle{}s center. \\
+\hline
+{\em sunY} & The y-\/coordinate of the sun\textquotesingle{}s center. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_planet_a925d18bb135ca16312c0e4ed506ad95c}\index{Planet@{Planet}!angle@{angle}}
+\index{angle@{angle}!Planet@{Planet}}
+\doxysubsubsection{\texorpdfstring{angle}{angle}}
+{\footnotesize\ttfamily \label{struct_planet_a925d18bb135ca16312c0e4ed506ad95c} 
+double Planet\+::angle}
+
+
+
+The current angle of the planet in its orbit. 
+
+\Hypertarget{struct_planet_a736d5d2681ed387ac14cf220f632d2af}\index{Planet@{Planet}!halfH@{halfH}}
+\index{halfH@{halfH}!Planet@{Planet}}
+\doxysubsubsection{\texorpdfstring{halfH}{halfH}}
+{\footnotesize\ttfamily \label{struct_planet_a736d5d2681ed387ac14cf220f632d2af} 
+int Planet\+::halfH}
+
+
+
+Half of the planet\textquotesingle{}s height, used for positioning. 
+
+\Hypertarget{struct_planet_a2aaa99260e0ae40ff4d320e9e0da7f31}\index{Planet@{Planet}!halfW@{halfW}}
+\index{halfW@{halfW}!Planet@{Planet}}
+\doxysubsubsection{\texorpdfstring{halfW}{halfW}}
+{\footnotesize\ttfamily \label{struct_planet_a2aaa99260e0ae40ff4d320e9e0da7f31} 
+int Planet\+::halfW}
+
+
+
+Half of the planet\textquotesingle{}s width, used for positioning. 
+
+\Hypertarget{struct_planet_a4dc99393b834f579756958aa4c7d50bb}\index{Planet@{Planet}!orbitRadius@{orbitRadius}}
+\index{orbitRadius@{orbitRadius}!Planet@{Planet}}
+\doxysubsubsection{\texorpdfstring{orbitRadius}{orbitRadius}}
+{\footnotesize\ttfamily \label{struct_planet_a4dc99393b834f579756958aa4c7d50bb} 
+double Planet\+::orbit\+Radius}
+
+
+
+The radius of the planet\textquotesingle{}s orbit around the sun. 
+
+\Hypertarget{struct_planet_a4fe0a8d2ada3b8e00dfb801cb2fb1bc1}\index{Planet@{Planet}!orbitSpeed@{orbitSpeed}}
+\index{orbitSpeed@{orbitSpeed}!Planet@{Planet}}
+\doxysubsubsection{\texorpdfstring{orbitSpeed}{orbitSpeed}}
+{\footnotesize\ttfamily \label{struct_planet_a4fe0a8d2ada3b8e00dfb801cb2fb1bc1} 
+double Planet\+::orbit\+Speed}
+
+
+
+The speed at which the planet orbits the sun. 
+
+\Hypertarget{struct_planet_abb1b9092445b238f3fd54298a05ad27c}\index{Planet@{Planet}!rect@{rect}}
+\index{rect@{rect}!Planet@{Planet}}
+\doxysubsubsection{\texorpdfstring{rect}{rect}}
+{\footnotesize\ttfamily \label{struct_planet_abb1b9092445b238f3fd54298a05ad27c} 
+SDL\+\_\+\+Rect Planet\+::rect}
+
+
+
+The rectangle defining the position and size of the planet. 
+
+\Hypertarget{struct_planet_ad6c657bbbbc3c7a2e5fec49579d1ee5d}\index{Planet@{Planet}!texture@{texture}}
+\index{texture@{texture}!Planet@{Planet}}
+\doxysubsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily \label{struct_planet_ad6c657bbbbc3c7a2e5fec49579d1ee5d} 
+std\+::shared\+\_\+ptr$<$SDL\+\_\+\+Texture$>$ Planet\+::texture}
+
+
+
+The texture representing the planet. 
+
